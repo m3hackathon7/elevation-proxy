@@ -1,0 +1,15 @@
+{
+  "name": "elevation-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shuhei Kagawa <shuhei.kagawa@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.7",
+    "request": "^2.45.0"
+  }
+}

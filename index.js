@@ -11,9 +11,14 @@ app.listen(port, function() {
   console.error('Listening on', port);
 });
 
+/**
+ * Creates a route that proxies request with query string.
+ * @param {String} url - URL of proxy target
+ */
 function createProxyRoute(url) {
   return function(req, res) {
     var params = { url: url, qs: req.query };
+    // TODO: Handle error.
     res.writeHead(200, corsHeader());
     request.get(params).pipe(res);
   };
